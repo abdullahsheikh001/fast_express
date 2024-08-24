@@ -1,0 +1,31 @@
+name: fast_express
+description: "A new Flutter project."
+publish_to: 'none' # Prevents accidental publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  animated_splash_screen: ^1.3.0
+  lottie: ^3.1.2
+  slider_button: ^2.1.0
+  carousel_slider: ^5.0.0
+  curved_navigation_bar: ^1.0.6  # Fixed indentation
+  flutter_advanced_drawer: ^1.3.6
+  get: ^4.6.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
