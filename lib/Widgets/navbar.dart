@@ -1,7 +1,5 @@
  import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:fast_express/Screens/Homescreen.dart';
-import 'package:fast_express/Screens/favoritescreen.dart';
-import 'package:flutter/material.dart';
+  import 'package:flutter/material.dart';
 
 class Curvednavigation extends StatefulWidget{
   const Curvednavigation({super.key});
@@ -12,11 +10,7 @@ class Curvednavigation extends StatefulWidget{
 
 class _CurvednavigationState extends State<Curvednavigation> {
   int currentindex = 0;
-  final List<Widget> pages = [
-    const Homescreen(),
-   const Favoritescreen()
-
-  ];
+   
 
   final bottomnavigationbar = GlobalKey<CurvedNavigationBarState>();
   @override
@@ -32,11 +26,7 @@ class _CurvednavigationState extends State<Curvednavigation> {
       Icon(Icons.save, color: Colors.white,),
      ],
      key: bottomnavigationbar,
-     onTap: (index){
-      setState(() {
-        currentindex = index;
-      });
-     },
+       
      color: Colors.black,
      backgroundColor: Colors.orange,
      animationCurve: Curves.easeInOutQuint,
